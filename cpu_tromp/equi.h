@@ -50,7 +50,7 @@ typedef u32 proof[PROOFSIZE];
 void setheader(blake2b_state *ctx, const char *header, const u32 headerLen, const char* nce, const u32 nonceLen) {
   uint32_t le_N = WN;
   uint32_t le_K = WK;
-  uchar personal[] = "ZcashPoW01230123";
+  uchar personal[] = "BgoldPoW01230123";
   memcpy(personal+8,  &le_N, 4);
   memcpy(personal+12, &le_K, 4);
   blake2b_param P[1];
